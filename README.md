@@ -3,6 +3,6 @@
 
 ## How to start it/what's in it
 It's a Spring Boot application having an hourly cron job and a V0.1 of the Wenofamer algorithm.
-You can start it as a usual Spring Boot Application.
+You can start it as a usual Spring Boot application.
 
 By the way, it also has tests for the V0.1 Wenofamer algorithm ;)
