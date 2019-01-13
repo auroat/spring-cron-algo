@@ -10,7 +10,7 @@ import hello.Wenofamer;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.*;
 
-public class AlgoTest {
+public class WenofamerTest {
 
     ArrayList<Long> participants;
     long sumOfBets;
