@@ -5,18 +5,18 @@
 
 package hello;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * This class has the reportCurrentTime() method, which schedules a task for every hour, thanks to the @Scheduled
  * annotation.
- * 
+ *
  * @author Aurel Pintea
  */
 
@@ -29,16 +29,16 @@ public class ScheduledTasks {
 
     /**
      * The top of every hour of every day.
-     * 
+     * <p>
      * Source:
      * https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/support/CronSequenceGenerator.html
      */
 //    Every hour.
-    @Scheduled(cron = "0 0 * * * *")
+//    @Scheduled(cron = "0 0 * * * *")
 
 //    Every minute.
-//    @Scheduled(cron = "0 * * * * *")
+    @Scheduled(cron = "0 * * * * *")
     public void reportCurrentTime() {
-	log.info("The time is now {}", dateFormat.format(new Date()));
+        log.info("The time is now {}", dateFormat.format(new Date()));
     }
 }
